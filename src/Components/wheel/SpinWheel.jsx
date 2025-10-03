@@ -127,17 +127,14 @@ export default function SpinWheel({ participants, onWinner }) {
                 })}
                 <circle cx="200" cy="200" r="198" fill="none" stroke="white" strokeWidth="4" />
               </svg>
-
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full bg-white shadow-2xl border-4 border-purple-500 z-20 flex items-center justify-center overflow-hidden">
-                <motion.img
-                  src="/pokefirx-logo.png"
-                  alt="PokeFirx"
-                  className="w-40 h-40 object-contain"
-                  animate={isSpinning ? { rotate: 360 } : {}}
-                  transition={{ duration: 1, repeat: isSpinning ? Infinity : 0, ease: "linear" }}
-                />
-              </div>
-            </motion.div>
+            </motion.div>   
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full bg-white shadow-2xl border-4 border-purple-500 z-20 flex items-center justify-center overflow-hidden">
+              <img
+                src="/pokefirx-logo.png"
+                alt="PokeFirx Logo"
+                className="w-30 h-30 object-contain"
+              />
+            </div>
           </div>
         </div>
 
